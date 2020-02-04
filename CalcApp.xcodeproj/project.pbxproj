@@ -13,6 +13,7 @@
 		68443B3923C9C9A800E9AD8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68443B3723C9C9A800E9AD8C /* Main.storyboard */; };
 		68443B3B23C9C9A900E9AD8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68443B3A23C9C9A900E9AD8C /* Assets.xcassets */; };
 		68443B3E23C9C9A900E9AD8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68443B3C23C9C9A900E9AD8C /* LaunchScreen.storyboard */; };
+		68443B4723C9CA3100E9AD8C /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68443B4623C9CA3100E9AD8C /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		68443B3A23C9C9A900E9AD8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68443B3D23C9C9A900E9AD8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		68443B3F23C9C9A900E9AD8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68443B4623C9CA3100E9AD8C /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		68443B3023C9C9A800E9AD8C /* CalcApp */ = {
 			isa = PBXGroup;
 			children = (
+				68443B4523C9CA0B00E9AD8C /* Model */,
 				68443B3123C9C9A800E9AD8C /* AppDelegate.swift */,
 				68443B3323C9C9A800E9AD8C /* SceneDelegate.swift */,
 				68443B3523C9C9A800E9AD8C /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				68443B3F23C9C9A900E9AD8C /* Info.plist */,
 			);
 			path = CalcApp;
+			sourceTree = "<group>";
+		};
+		68443B4523C9CA0B00E9AD8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68443B4623C9CA3100E9AD8C /* Car.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 			files = (
 				68443B3623C9C9A800E9AD8C /* ViewController.swift in Sources */,
 				68443B3223C9C9A800E9AD8C /* AppDelegate.swift in Sources */,
+				68443B4723C9CA3100E9AD8C /* Car.swift in Sources */,
 				68443B3423C9C9A800E9AD8C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GunjiKamiya.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.GunjiKamiya.CalcApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
